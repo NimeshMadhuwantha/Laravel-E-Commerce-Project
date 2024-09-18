@@ -8,6 +8,12 @@ use App\Models\User;
 
 class HomeController extends Controller
 {
+    public function index(){
+        return view('Home.userpage');
+    }
+
+
+
     public function redirect(){
          
         $usertype=Auth::user()->usertype;
